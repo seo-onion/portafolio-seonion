@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Cherry+Cream+Soda");
+/* src/index.css */
+@import url("https://cdn.jsdelivr.net/npm/ionicons@7.1.0/dist/css/ionicons.min.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cherry-cream-soda-regular {
+  font-family: "Cherry Cream Soda", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bubblegum-sans-regular {
+  font-family: "Bubblegum Sans", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.me, .proyects, .about_me, .contact {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 60px;
+  justify-items: center;
+  align-items: center;
+}
+
+.container-chanel{
+  display: grid;
+  place-items: center;
+  gap: 40px;
+}
+@media only screen and (min-width: 320px) {
+  .me > div {
+    width: 85%;
+  }
+  .proyect-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 40px;
+  }
+
+  .skills-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    
+  }
+  .form-container{
+    padding-right: 10px !important;
+  }
+}
+
+/* Smartphones grandes y tablets pequeñas: 480px */
+@media only screen and (min-width: 480px) {
+  .me > div {
+    width: 85%;
+  }
+  .skills-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    
+  }
+
+  .container-chanel{
+    grid-template-columns: 1fr 1fr ;
+  }
+
+
+}
+
+/* Tablets y laptops pequeños: 768px */
+@media only screen and (min-width: 768px) {
+  .container-chanel{
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .proyect-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+
+  }
+
+  .skills-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    
+  }
+
+  .skills-container > div > div{
+    width: 100% !important;
+    margin-bottom: 40px;
+    
+  }
+
+  .skills-container div .container-habilidades-blandas{
+    margin-top: 120px;
+    justify-self: start !important;
+    margin-left: 30px;
+    
+  }
+
+  .soft-skills-container{
+    justify-self: start !important;
+  }
+
+  .me > *:nth-child(odd) {
+    margin: 0 40px;
+    width: auto;
+  }
+
+  .me > *:nth-child(even) {
+    margin: 0 160px;
+    width: 480px;
+    justify-self: end;
+  }
+
+  .me > .hola {
+    margin-right: 50%;
+  }
+}
+
+/* Laptops medianos: 1025px */
+@media only screen and (min-width: 1025px) {
+
+  .container-chanel{
+    grid-template-columns: .2fr .2fr .2fr;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+
+  .technical-skills-container{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    justify-items: center; /* Centra horizontalmente */
+  }
+
+
+  .skills-container{
+    display: grid;
+    grid-template-columns: 1fr !important;
+    justify-items: center;
+    align-items: center;
+    
+    
+  }
+
+
+  .skills-container div .container-habilidades-blandas{
+    grid-column: 1 / 6;
+    height: 260px !important;
+    margin: 0;
+  }
+
+  .soft-skills-container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr) !important;
+    padding: 0 100px !important;
+  }
+
+  .me {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .presentacion_container {
+    width: 800px !important;
+    height: 660px !important;
+  }
+  .presentacion {
+    font-size: 34px;
+    line-height: 1.6;
+  }
+
+  .cv {
+    font-size: 40px;
+    height: 60px;
+  }
+
+  .me > *:nth-child(even) {
+    width: 600px;
+    height: 600px !important;
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    margin: 0 !important;
+    margin-right: 100px !important;
+  }
+
+
+  .proyecto_window h2 {
+    font-size: 50px;
+    line-height: 1.6  ;
+
+  }
+
+  .proyecto_window p {
+    font-size: 34px;
+    line-height: 1.6  ;
+
+  }
+}
+
+/* Resolución popular (1920×1080): Pantallas grandes */
+@media only screen and (min-width: 1920px) {
+
+
+  .presentacion_container {
+    width: 1000px !important;
+    height: 840px !important;
+  }
+  .presentacion {
+    font-size: 50px;
+    line-height: 1.2;
+  }
+
+  .cv {
+    font-size: 40px;
+    height: 60px;
+    margin-right: 40px;
+  }
+
+  .me > *:nth-child(even) {
+    width: 700px;
+    height: 700px !important;
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+  }
+}
