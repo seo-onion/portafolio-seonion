@@ -2,6 +2,7 @@ import Window from "../components/Window";
 import Button from "../components/Button";
 import SoftSkill from "../components/SoftSkill";
 import TechnicalSkills from "../components/TechnicalSkills";
+
 export default function AboutMe() {
   return (
     <div className="bg-backgroundColor pt-[100px] about_me">
@@ -137,7 +138,7 @@ export default function AboutMe() {
 
           <TechnicalSkills
             title="Backend"
-            list={["Pyhton, C++ y Java", "Springboot", "FastApi"]}
+            list={["Springboot", "FastApi", "Django", "NodeJS"]}
             img={
               <ion-icon
                 name="cloud-sharp"
@@ -159,7 +160,7 @@ export default function AboutMe() {
 
           <TechnicalSkills
             title="Contenedores y DevOps"
-            list={["Docker"]}
+            list={["Docker", "Postman"]}
             img={
               <ion-icon
                 name="logo-docker"

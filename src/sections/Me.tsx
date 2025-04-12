@@ -53,7 +53,7 @@ export default function Me() {
           </p>
 
           <div className="w-full flex justify-end pb-[10px] pr-[10px]">
-            <a href="https://drive.google.com/file/d/17VDCY4F8d760H358X7NEbzhA4KYk2BJQ/view?usp=sharing" target="_blank">
+            <a href="https://drive.google.com/file/d/1iRDRZF80isX2pWPLdstdegq71nKSgnqT/view?usp=sharing" target="_blank">
               <Button text="Ver CV" size={34} icon="download" id_tag="cv" />
             </a>
           </div>

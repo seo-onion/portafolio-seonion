@@ -1,8 +1,9 @@
 import Proyect from "../components/Proyect";
 import proyect1 from "../../public/paintjs.gif";
 import proyecto2 from "../../public/clock.gif";
-import proyecto3 from "../../public/backendatuservicio.png"
-import proyecto4 from "../../public/auth.gif"
+import proyecto3 from "../../public/backendatuservicio.png";
+import proyecto4 from "../../public/auth.gif";
+import proyect5 from "../../public/beplus.gif";
 import Window from "../components/Window";
 
 export default function Proyects() {
@@ -15,6 +16,12 @@ export default function Proyects() {
       </Window>
 
       <div className="proyect-container w-full h-auto">
+        <Proyect
+          img={proyect5}
+          title="BePlus"
+          link="https://github.com/seo-onion/BePlusMvp"
+          description="BePlus es un bot de Discord que utiliza la gamificación para fomentar hábitos saludables y mejorar la productividad. Los usuarios ganan recompensas como monedas y gemas al completar tareas y metas diarias, las cuales pueden canjearse por premios o personalizar una mascota virtual llamada Rocky."
+        />
         <Proyect
           img={proyect1}
           title="Paint Js"
@@ -37,10 +44,10 @@ export default function Proyects() {
         ></Proyect>
 
         <Proyect
-        img={proyecto4}
-        title="Autenticación con AWS Cognito y Amplify"
-        link="https://master.d239ou9bkmwl9w.amplifyapp.com/"
-        description="Aplicación móvil en React Native que utiliza AWS Amplify para autenticación de usuarios con AWS Cognito. Incluye registro, inicio de sesión, recuperación de contraseñas y manejo seguro de sesiones con tokens JWT. Desplegado con Amplify CLI,">
+          img={proyecto4}
+          title="Autenticación con AWS Cognito y Amplify"
+          link="https://master.d239ou9bkmwl9w.amplifyapp.com/"
+          description="Aplicación móvil en React Native que utiliza AWS Amplify para autenticación de usuarios con AWS Cognito. Incluye registro, inicio de sesión, recuperación de contraseñas y manejo seguro de sesiones con tokens JWT. Desplegado con Amplify CLI,">
 
         </Proyect>
       </div>
